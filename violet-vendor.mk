@@ -1279,5 +1279,4 @@ PRODUCT_PACKAGES += \
     embms \
     uceShimService \
     ims \
-    qcrilmsgtunnel \
-    chargeonlymode
+    qcrilmsgtunnel
