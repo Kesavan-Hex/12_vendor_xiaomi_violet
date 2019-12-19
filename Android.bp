@@ -133,16 +133,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "SoterService",
-	owner: "xiaomi",
-	apk: "proprietary/app/SoterService/SoterService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -168,6 +158,17 @@ android_app_import {
 	name: "IWlanService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "SoterService",
+	owner: "xiaomi",
+	apk: "proprietary/vendor/app/SoterService/SoterService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

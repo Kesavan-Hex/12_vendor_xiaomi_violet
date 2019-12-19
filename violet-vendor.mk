@@ -1274,10 +1274,10 @@ PRODUCT_PACKAGES += \
     libplatformconfig \
     libsdm-disp-vndapis \
     libthermalclient \
-    SoterService \
     CneApp \
     FingerprintExtensionService \
     IWlanService \
+    SoterService \
     TimeService \
     PowerOffAlarm \
     QtiTelephonyService \
