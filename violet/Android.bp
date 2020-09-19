@@ -19,3 +19,24 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "MotoDolbyV3",
+	owner: "asus",
+	apk: "proprietary/app/MotoDolbyV3/MotoDolbyV3.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "daxService",
+	owner: "asus",
+	apk: "proprietary/product/priv-app/daxService/daxService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
